@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexDB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+    <div class="bg-blue-700">
+        <div class="container mx-auto">
+
+            <header class="flex items-center justify-between py-2">
+
+                <h1 class="font-semibold text-white text-md">
+                    Waito
+                </h1>
+
+
+                <div class="text-white">
+                    <a href="https://github.com/sergioriverafl">GitHub</a>
+                </div>
+
+            </header>
+
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-10">
+
+        <div class="flex items-center justify-between py-2 text-sm">
+
+            <h1 class="font-semibold text-gray-600">
+                Waito
+            </h1>
+
+            <form action="">
+                <input type="text" class="w-64 px-3 py-1 border border-gray-600 rounded-md">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="container mx-auto mt-10">
+
+        <div class="flex flex-col ">
+
+            <div class="flex w-full rounded-t-md border border-gray-300 overflow-hidden font-semibold text-xs uppercase text-gray-600">
+                <div
+                    class="flex items-center w-full border-l-none border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Id
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Name
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Last Name
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Phone
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Email
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Address
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Created At
+                </div>
+                <div
+                    class="flex items-center w-full border-l border-gray-300 border-collapse px-3 py-2 bg-gray-100">
+                    Updated At
+                </div>
+            </div>
+
+            <div id="contacts" class="flex flex-col"></div>
+
+        </div>
+
+    </div>
+
+    <div class="container mx-auto my-10">
+
+        <form id="send" class="flex flex-col gap-4">
+            <div class="flex flex-col">
+                <label for="contact-name" class="text-sm text-gray-700">Name</label>
+                <input type="text" id="contact-name" class="w-64 px-3 py-1 border border-gray-600 rounded-md">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="contact-last-name" class="text-sm text-gray-700">Last Name</label>
+                <input type="text" id="contact-last-name" class="w-64 px-3 py-1 border border-gray-600 rounded-md">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="contact-phone" class="text-sm text-gray-700">Phone</label>
+                <input type="text" id="contact-phone" class="w-64 px-3 py-1 border border-gray-600 rounded-md">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="contact-email" class="text-sm text-gray-700">Email</label>
+                <input type="email" id="contact-email" class="w-64 px-3 py-1 border border-gray-600 rounded-md">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="contact-address" class="text-sm text-gray-700">Address</label>
+                <input type="text" id="contact-address" class="w-64 px-3 py-1 border border-gray-600 rounded-md">
+            </div>
+
+            <div class="flex">
+                <button type="submit" id="btn-save"
+                    class="bg-blue-700 text-white px-6 py-1 rounded-md text-sm">Save</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="/js/db.js"></script>
+</body>
+
+</html>
